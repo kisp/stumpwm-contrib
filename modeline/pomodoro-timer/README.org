@@ -1,0 +1,16 @@
+* pomodoro-timer
+
+** Usage
+
+Add the source to your load-path with something like
+#+BEGIN_SRC lisp
+    (add-to-load-path "~/stumpwm/contrib/modeline/pomodoro-timer")
+#+END_SRC
+Next, load the module with
+#+BEGIN_SRC lisp
+    (load-module "pomodoro-timer")
+#+END_SRC
+Finally create a mode-line format string with %p in it, e.g.,
+#+BEGIN_SRC lisp
+    (setf *screen-mode-line-format* "^[^B^7*%p^]")
+#+END_SRC
